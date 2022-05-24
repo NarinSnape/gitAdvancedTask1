@@ -1,0 +1,17 @@
+#Исключаем все папки build:
+**/build/*
+#но не файлы с именем build:
+!**/build
+#Исключаем все jar-файлы:
+*.jar
+#файл module2.jar из п 2.1.b по-прежнему не должен игнорироваться:
+!module2.jar
+#Исключаем application-local.properties:
+application-local.properties
+#папку .idea полностью:
+.idea/
+#папку .idea_copy:
+.idea_copy/*
+#кроме файла workspace.xml:
+!.idea_copy/workspace.xml
+#It is not possible to re-include a file if a parent directory of that file is excluded.
